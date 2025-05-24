@@ -1,0 +1,241 @@
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card-project {
+  position: relative;
+  width: 30%;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 2px solid orangered;
+  display: inline-block;
+}
+
+.card-project:hover {
+  transform: scale(1.05);
+
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-project:hover .card-overlay {
+  opacity: 1;
+}
+
+.description {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 80%;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-project:hover .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.card-project:hover .btn {
+  opacity: 1;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-web {
+  border: 1px solid gray;
+  transform: translateX(-150px);
+}
+
+.card-project:hover .view-web {
+  transform: translateX(0);
+}
+
+.github {
+  background: #fff;
+  color: white;
+  transform: translateX(150px);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card-project:hover .github {
+  transform: translateX(0);
+}
+
+.view-web:hover {
+  background: #fff;
+  color: #000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card-project:hover .btn {
+  animation: pulse 1.5s infinite;
+}
+
+@media (max-width: 1024px) {
+  .card-project {
+    width: 200px;
+    height: 150px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    max-width: 90%;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .github {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .card-overlay {
+    gap: 8px;
+  }
+
+  .btn-container {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-project {
+    width: 160px;
+    height: 120px;
+  }
+
+  .description {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 4px 8px;
+    font-size: 0.6rem;
+  }
+
+  .github {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .card-overlay {
+    gap: 6px;
+  }
+
+  .btn-container {
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .container-cards {
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .card-project {
+    width: 140px;
+    height: 105px;
+    border-radius: 12px;
+  }
+
+  .description {
+    font-size: 0.6rem;
+    max-width: 95%;
+  }
+
+  .btn {
+    padding: 3px 6px;
+    font-size: 0.55rem;
+  }
+
+  .github i {
+    font-size: 18px;
+  }
+
+  .card-overlay {
+    gap: 5px;
+  }
+
+  .btn-container {
+    gap: 8px;
+  }
+}
