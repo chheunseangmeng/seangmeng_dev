@@ -1227,4 +1227,24 @@ p {
   p {
     font-size: 13px;
   }
+  .main-profile {
+    display: inline-block;
+    padding: 10px; 
+    border-radius: 50%; 
+    margin-top: 70px;
+  }
+
+  .main-profile img {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    margin-top: -80px; 
+    object-fit: cover; 
+  }
+
+  /* Remove hover effects and animations */
+  .main-profile:hover img {
+    transform: none; 
+    box-shadow: none; 
+  }
 }
