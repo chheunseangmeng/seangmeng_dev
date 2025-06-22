@@ -12,6 +12,7 @@ html {
 
 body {
   background: #fff;
+  /* background: linear-gradient(to right, #68d391, #3b82f6); */
 }
 nav {
   display: flex;
@@ -130,6 +131,30 @@ nav {
   font-size: 48px;
   font-weight: bold;
   color: #222;
+}
+.about-me {
+  padding: 70px 20px;
+  display: flex;
+  gap: 30px;
+  border: 1px solid gray;
+  margin: 40px auto; /* Center horizontally */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 95%;
+}
+
+.about-me p {
+  font-size: 17px;
+}
+.about-me span {
+  color: orangered;
+  font-weight: bold;
+}
+.img-about-me img {
+  width: 400px;
+}
+.about-paragraph p {
+  line-height: 34px;
 }
 
 .text-main p {
@@ -404,25 +429,7 @@ nav {
 .mid-about p {
   color: gray;
 }
-.about-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-  background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
-  border-radius: 15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-  color: white;
-  transition: transform 0.3s ease-in-out;
-  margin-bottom: 70px;
-  margin-top: 40px;
-}
-.about-main:hover {
-  transform: scale(1.02);
-}
+
 .my-img {
   flex: 1;
   max-width: 300px;
@@ -869,6 +876,138 @@ p {
   margin: 0;
   font-size: 14px;
 }
+
+.all-img {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.logo {
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  object-fit: contain;
+  padding: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: heartbeat 1.5s ease-in-out infinite, spin 20s linear infinite; /* Combined animations */
+  transition: transform 0.3s ease;
+  transform: rotate(var(--angle)) translateX(var(--radius))
+    rotate(calc(-1 * var(--angle))); /* Initial position */
+}
+
+.logo:hover {
+  transform: rotate(var(--angle)) translateX(var(--radius))
+    rotate(calc(-1 * var(--angle))) scale(1.2); /* Maintain position on hover */
+  z-index: 10;
+}
+
+.middle {
+  position: relative;
+  z-index: 1;
+}
+
+.middle img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Fan-like spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(var(--angle)) translateX(var(--radius))
+      rotate(calc(-1 * var(--angle)));
+  }
+  100% {
+    transform: rotate(calc(var(--angle) + 360deg)) translateX(var(--radius))
+      rotate(calc(-1 * (var(--angle) + 360deg)));
+  }
+}
+
+/* Logo configurations with same radius and speed, different angles */
+.logo1 {
+  --radius: 200px;
+  --angle: 0deg;
+}
+.logo2 {
+  --radius: 200px;
+  --angle: 20deg;
+}
+.logo3 {
+  --radius: 200px;
+  --angle: 40deg;
+}
+.logo4 {
+  --radius: 200px;
+  --angle: 60deg;
+}
+.logo5 {
+  --radius: 200px;
+  --angle: 80deg;
+}
+.logo6 {
+  --radius: 200px;
+  --angle: 100deg;
+}
+.logo7 {
+  --radius: 200px;
+  --angle: 120deg;
+}
+.logo8 {
+  --radius: 200px;
+  --angle: 140deg;
+}
+.logo9 {
+  --radius: 200px;
+  --angle: 160deg;
+}
+.logo10 {
+  --radius: 200px;
+  --angle: 180deg;
+}
+.logo11 {
+  --radius: 200px;
+  --angle: 200deg;
+}
+.logo12 {
+  --radius: 200px;
+  --angle: 220deg;
+}
+.logo13 {
+  --radius: 200px;
+  --angle: 240deg;
+}
+.logo14 {
+  --radius: 200px;
+  --angle: 260deg;
+}
+.logo15 {
+  --radius: 200px;
+  --angle: 280deg;
+}
+.logo16 {
+  --radius: 200px;
+  --angle: 300deg;
+}
+.logo17 {
+  --radius: 200px;
+  --angle: 320deg;
+}
+.logo18 {
+  --radius: 200px;
+  --angle: 340deg;
+}
+
 /* ✅ Screen size 1024px - Keep menu normal */
 @media (max-width: 1024px) {
   .nav-link ul li a {
@@ -894,11 +1033,7 @@ p {
   .card {
     width: 45%; /* Cards should stack on small screens */
   }
-  .about-main {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-  }
+
   .my-img {
     max-width: 100%;
   }
@@ -973,6 +1108,37 @@ p {
   .ribbon {
     font-size: 16px;
   }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border: none;
+  }
+  .about-me p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+  }
+  .img-about-me img {
+    width: 350px;
+    margin-left: -20px;
+  }
+  .all-img {
+    height: 500px;
+    max-width: 500px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    --radius: 120px; /* Scaled radius */
+  }
+
+  .middle img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 @media screen and (max-width: 736px) {
@@ -1040,10 +1206,7 @@ p {
   .card {
     width: 100%; /* Cards should stack on small screens */
   }
-  .about-main {
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
+
   .my-img img {
     max-width: 300px;
   }
@@ -1117,9 +1280,7 @@ p {
     width: 45px;
     height: 45px;
   }
-  .about-main {
-    padding: 15px;
-  }
+
   .my-img img {
     max-width: 250px;
     margin-top: 2vh;
@@ -1254,4 +1415,25 @@ p {
   .email .number {
     word-break: break-all;
   }
+.all-img {
+    height: 400px; 
+    max-width: 400px; 
+  }
+  .logo {
+    width: 40px; 
+    height: 40px;
+    --radius: 120px; 
+  }
+  .middle img {
+    width: 210px; 
+    height: 210px; 
+    margin-top: -30px;
+  }
+  .middle:hover ~ .logo,
+  .middle:hover + .logo {
+    --radius: 180px; 
+  }
 }
+
+/* ---------------------------------------------------*/
+
