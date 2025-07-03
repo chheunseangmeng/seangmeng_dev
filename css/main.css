@@ -1179,99 +1179,129 @@ p {
   list-style-type: square;
 }
 
+.tools {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.tool-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.tool-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+.tool-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #10b981);
+  transition: opacity 0.3s ease;
+}
 
-    .tools {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
+.tool-card:hover::before {
+  opacity: 0.8;
+}
 
-    .tool-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
+.tool-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+  position: relative;
+  z-index: 1;
+}
 
-    .tool-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    }
+.progress {
+  margin-bottom: 16px;
+  position: relative;
+}
 
-    .tool-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, #4a90e2, #50c878);
-    }
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
 
-    .tool-card h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      color: #222;
-    }
+.progress-header span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1f2937;
+  position: relative;
+}
+  .progress-header img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.progress-header .percentage {
+  font-size: 15px;
+  color: #4b5563;
+}
 
-    .progress {
-      margin-bottom: 16px;
-    }
+.virtual{
+  color: lightsalmon;
+  font-size: 15px;
+}
 
-    .progress-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 6px;
-    }
+.progress-bar {
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
 
-    .progress-header span {
-      font-size: 1rem;
-      font-weight: 500;
-      color: #444;
-    }
+.progress-fill {
+  height: 100%;
+  border-radius: 12px;
+  width: 0;
+  transition: width 2s ease-in-out;
+  background: linear-gradient(90deg, #3807aa, #a78bfa);
+  position: relative;
+  overflow: hidden;
+}
 
-    .progress-header .percentage {
-      font-size: 0.9rem;
-      color: #666;
-      font-weight: 400;
-    }
+.progress-fill.animated {
+  width: var(--progress-width);
+}
 
-    .progress-bar {
-      height: 10px;
-      background-color: #e0e4e8;
-      border-radius: 10px;
-      overflow: hidden;
-    }
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,50 C20,30 40,70 60,50 C80,30 100,70 120,50 C140,30 160,70 180,50 C200,30 220,70 240,50" fill="rgba(255,255,255,0.4)" /></svg>');
+  background-size: 50% 100%;
+  background-repeat: repeat-x;
+  animation: wave 3s linear infinite;
+  z-index: 1;
+  opacity: 0.5;
+}
 
-    .progress-fill {
-      height: 100%;
-      border-radius: 10px;
-      transition: width 0.4s ease-in-out;
-    }
-
-    .tool-card:nth-child(1) .progress-fill {
-      background: linear-gradient(90deg, #4a90e2, #63b3ed);
-    }
-
-    .tool-card:nth-child(2) .progress-fill {
-      background: linear-gradient(90deg, #50c878, #68d391);
-    }
-
-    .tool-card:nth-child(3) .progress-fill {
-      background: linear-gradient(90deg, #9b59b6, #b07cd9);
-    }
-
-    .progress:hover .progress-fill {
-      filter: brightness(1.1);
-    }
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 /* ✅ Screen size 1024px - Keep menu normal */
 @media (max-width: 1024px) {
@@ -1423,6 +1453,28 @@ p {
 
   .education-timeline-right img {
     width: 100%;
+  }
+  .tools {
+    grid-template-columns: 1fr; /* stack cards vertically */
+    gap: 16px; /* smaller gap */
+    padding: 0 20px; /* some side padding */
+  }
+
+  .tool-card {
+    padding: 16px; /* reduce padding on smaller screens */
+  }
+
+  .tool-card h3 {
+    font-size: 1.3rem; /* smaller heading */
+  }
+
+  .progress-header span,
+  .progress-header .percentage {
+    font-size: 0.9rem; /* smaller text in progress header */
+  }
+
+  .progress-bar {
+    height: 8px; /* slightly thinner progress bar */
   }
 }
 

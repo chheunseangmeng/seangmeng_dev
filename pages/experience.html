@@ -12,6 +12,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="icon" href="../img/verify-icon.png">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
   <body>
     <nav>
@@ -132,80 +134,91 @@
     </div>
 
     <!-- card container of project -->
-    <div class="container-cards">
-        <div class="card-project">
-            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
-            <div class="card-overlay">
-                <p class="description">PNC Sport Club </p>
-                <div class="btn-container">
-                    <a href="#" class="btn view-web">View Web</a>
-                    <a href="#" class="btn github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
+  <div class="container-cards">
+    <div class="card-project">
+      <img src="../img/vc-png.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">Virtual Company 1</p>
+         <span class="virtual">
+          Available only on Git Hub
+       </span>
+        <div class="btn-container">
+          <!-- <a href="#" class="btn view-web">View Web</a> -->
+           <a href="#" class="btn view-web" onclick="showNotDeployedAlert(); return false;">View Web</a>
+
+          <a href="https://github.com/Kin-Doung/POS-SYSTEM-G5" target="_blank" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-        <div class="card-project">
-            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
-            <div class="card-overlay">
-                <p class="description">Voice Control Music Player</p>
-                <div class="btn-container">
-                    <a href="#" class="btn view-web">View Web</a>
-                    <a href="#" class="btn github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="card-project">
-            <img src="../img/vc-png.PNG" alt="Project Image" class="card-img">
-            <div class="card-overlay">
-                <p class="description">Expense Tracker app  </p>
-                <div class="btn-container">
-                    <a href="#" class="btn view-web">View Web</a>
-                    <a href="#" class="btn github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="card-project">
-            <img src="../img/drink-sale-img.PNG" alt="Project Image" class="card-img">
-            <div class="card-overlay">
-                <p class="description">Drinks sale</p>
-                <div class="btn-container">
-                    <a href="https://drinksale.netlify.app/" target="_blank" class="btn view-web">View Web</a>
-                    <a href="https://github.com/chheunseangmeng/drink-sale-web" target="_blank" class="btn github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="card-project">
-            <img src="../img/psa-kasikor.PNG" alt="Project Image" class="card-img">
-            <div class="card-overlay">
-                <p class="description">P'sa Kasikor</p>
-                <div class="btn-container">
-                    <a href="https://psa-kasikor.vercel.app/" target="_blank" class="btn view-web">View Web</a>
-                    <a href="https://github.com/chheunseangmeng/psa-kasikor" target="_blank" class="btn github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-           <div class="card-project">
-            <img src="../img/book-store.PNG" alt="Project Image" class="card-img">
-            <div class="card-overlay">
-                <p class="description">Book Store</p>
-                <div class="btn-container">
-                    <a href="https://book-store-dev.vercel.app/" target="_blank" class="btn view-web">View Web</a>
-                    <a href="https://github.com/chheunseangmeng/book-store-dev" target="_blank" class="btn github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <div class="card-project">
+      <img src="../img/java-script.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">Expense Tracker app</p>
+        <div class="btn-container">
+          <a href="https://g2-a-expense-tracker-app.vercel.app/" target="_blank" class="btn view-web">View Web</a>
+          <a href="https://github.com/chheunseangmeng/G2-A--Expense-Tracker-app" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-project">
+      <img src="../img/vc-png.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">Voice Control Music Player</p>
+        <div class="btn-container">
+          <a href="#" class="btn view-web">View Web</a>
+          <a href="https://github.com/Mean74student/Project-Voice-Control-Music-by-Python-M-K-L" target="_blank" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="card-project">
+      <img src="../img/psa-kasikor.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">P'sa Kasikor</p>
+        <div class="btn-container">
+          <a href="https://psa-kasikor.vercel.app/" target="_blank" class="btn view-web">View Web</a>
+          <a href="https://github.com/chheunseangmeng/psa-kasikor" target="_blank" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<div class="card-project">
+      <img src="../img/drink-sale-img.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">Drinks sale</p>
+        <div class="btn-container">
+          <a href="https://drinksale.netlify.app/" target="_blank" class="btn view-web">View Web</a>
+          <a href="https://github.com/chheunseangmeng/drink-sale-web" target="_blank" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-project">
+      <img src="../img/book-store.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">Book Store</p>
+        <div class="btn-container">
+          <a href="https://book-store-dev.vercel.app/" target="_blank" class="btn view-web">View Web</a>
+          <a href="https://github.com/chheunseangmeng/book-store-dev" target="_blank" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
     <script>
         document.querySelectorAll(".card-project").forEach(card => {
             VanillaTilt.init(card, {
@@ -262,6 +275,19 @@
       </ul>
     </div>
 
+
+
+    <script>
+      
+function showNotDeployedAlert() {
+    Swal.fire({
+      icon: 'info',
+      title: 'Not Deployed',
+      text: 'This project website has not deploy yet.\nGo to Git Hub',
+      confirmButtonText: 'OKAY'
+    });
+  }
+    </script>
     <!-- Add Scripts Here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
