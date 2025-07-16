@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-
   <link rel="icon" href="./img/user-icon.png" />
 </head>
 
@@ -37,7 +36,7 @@
 
   <section class="main-section">
     <div class="text-main">
-      <h1>Seang Meng</h1>
+      <h1><strong style="color: orangered">'</strong> Seang Meng</h1>
       <span></span>
       <p>
         "Passionate Web Developer Focused on Crafting Beautiful, Functional
@@ -80,24 +79,41 @@
   </div>
 
   <div class="about-me scroll-reveal">
-    <div class="img-about-me scroll-reveal">
-      <img src="./img/about-me.png" alt="" />
+    <!-- Image card -->
+    <div class="img-about-me scroll-reveal info-card">
+      <img src="./img/about-me.png" alt="About Me" />
     </div>
+
+    <!-- Cards container -->
     <div class="about-paragraph scroll-reveal">
-      <p class="scroll-reveal">
-        <strong>Education : </strong> I’m a second-year Web Development student at Passerelles Numériques Cambodia.
-      </p>
-      <p class="scroll-reveal">
-        <strong>Passionate :</strong> I’m passionate about creating responsive and user-friendly websites using HTML, CSS, JavaScript, Vue.js, and Tailwind CSS. I also enjoy working on the back end with PHP, Laravel, and MySQL to build full-stack web applications that are both functional and well-designed.
-      </p>
-      <p class="scroll-reveal">
-        <strong>Tools :</strong> HTML, CSS, SASS, Bootstrap, Tailwind, JavaScript, Vue.js, Node.js, Express.js, PHP, OOP, Laravel, GitHub, Postman, Jira, Figma.
-      </p>
-      <p class="scroll-reveal">
-        <strong>My Vision :</strong> My goal is to become a full-stack developer and create web applications that improve everyday life. I’m eager to keep learning and growing in the tech world.
-      </p>
+      <div class="four-cards">
+        <div class="info-card scroll-reveal">
+          <p><strong>Education:</strong> I’m a second-year Web Development student at Passerelles Numériques Cambodia.
+          </p>
+        </div>
+
+        <div class="info-card scroll-reveal">
+          <p><strong>Passionate:</strong> I’m passionate about creating responsive and user-friendly websites. I also
+            enjoy working on the back end with PHP, Laravel, and MySQL to build full-stack web applications that are
+            both functional and well-designed.</p>
+        </div>
+      </div>
+
+      <div class="four-cards-under">
+        <div class="info-card scroll-reveal">
+          <p><strong>My Vision:</strong> My goal is to become a full-stack developer and create web applications that
+            improve everyday life. I’m eager to keep learning and growing in the tech world.</p>
+        </div>
+
+        <div class="info-card scroll-reveal">
+          <p><strong>Tools:</strong> HTML, CSS, SASS, Bootstrap, Tailwind, JavaScript, Vue.js, Node.js, Express.js, PHP,
+            OOP, Laravel, MySQL, GitHub, Postman, Jira, Figma.</p>
+        </div>
+      </div>
+
     </div>
   </div>
+
 
   <!-- end of about me  -->
 
@@ -238,231 +254,271 @@
     <h1>Technologies & Tools</h1>
   </div>
 
-<section class="tools scroll-reveal">
-  <!-- Front-End Card -->
-  <div class="tool-card">
-    <h3 style="display: flex; align-items: center">
-      Front-End <i style="margin-left: 10px" class="fa-solid fa-code"></i>
-    </h3>
+  <section class="tools scroll-reveal">
+    <!-- Front-End Card -->
+    <div class="tool-card">
+      <h3 style="display: flex; align-items: center">
+        Front-End <i style="margin-left: 10px" class="fa-solid fa-code"></i>
+      </h3>
 
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/html.webp" alt="HTML" /> HTML</span>
-        <span class="percentage">80%</span>
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/html.webp" alt="HTML" /> HTML</span>
+          <span class="percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 80%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 80%"></div></div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/css.png" alt="CSS" /> CSS</span>
+          <span class="percentage">70%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/sass.png" alt="SASS" /> SASS</span>
+          <span class="percentage">65%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 65%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/bootstrap.png" alt="Bootstrap" />
+            Bootstrap</span>
+          <span class="percentage">65%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 65%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/tailwind.png" alt="Tailwind" />
+            Tailwindcss</span>
+          <span class="percentage">60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 60%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/javascript.webp" alt="JavaScript" />
+            JavaScript</span>
+          <span class="percentage">65%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 65%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/vue.png" alt="Vue JS" /> Vue JS</span>
+          <span class="percentage">60%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 60%"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/css.png" alt="CSS" /> CSS</span>
-        <span class="percentage">70%</span>
+    <!-- Back-End Card -->
+    <div class="tool-card">
+      <h3 style="display: flex; align-items: center">
+        Back-End
+        <i style="margin-left: 10px" class="fa-solid fa-laptop-code"></i>
+      </h3>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/node.png" alt="Node JS" /> Node JS</span>
+          <span class="percentage">75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 75%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 70%"></div></div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/express.png" alt="Express JS" /> Express
+            JS</span>
+          <span class="percentage">70%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/php.png" alt="PHP" /> PHP</span>
+          <span class="percentage">65%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 65%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/laravel.png" alt="Laravel" /> Laravel</span>
+          <span class="percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 80%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/mysql.png" alt="MySQL" /> MySQL</span>
+          <span class="percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 80%"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/oop.png" alt="OOP" /> OOP</span>
+          <span class="percentage">75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 75%"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/sass.png" alt="SASS" /> SASS</span>
-        <span class="percentage">65%</span>
+    <!-- Other Tools -->
+    <div class="tool-card">
+      <h3 style="display: flex; align-items: center">
+        Other Tools <i style="margin-left: 10px" class="fa-solid fa-gear"></i>
+      </h3>
+
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/git hub.png" alt="GitHub" /> GitHub</span>
+          <span class="percentage">85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 85%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 65%"></div></div>
-    </div>
 
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/bootstrap.png" alt="Bootstrap" /> Bootstrap</span>
-        <span class="percentage">65%</span>
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/postmant.png" alt="Postman" /> Postman</span>
+          <span class="percentage">90%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 90%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 65%"></div></div>
-    </div>
 
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/tailwind.png" alt="Tailwind" /> Tailwindcss</span>
-        <span class="percentage">60%</span>
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/Jira_Logo.svg.png" alt="Jira" /> Jira</span>
+          <span class="percentage">80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 80%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 60%"></div></div>
-    </div>
 
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/javascript.webp" alt="JavaScript" /> JavaScript</span>
-        <span class="percentage">65%</span>
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/figma.png" alt="Figma" /> Figma</span>
+          <span class="percentage">85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 85%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 65%"></div></div>
-    </div>
 
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/vue.png" alt="Vue JS" /> Vue JS</span>
-        <span class="percentage">60%</span>
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/aws.png" alt="AWS" /> AWS</span>
+          <span class="percentage">50%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 50%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 60%"></div></div>
-    </div>
-  </div>
 
-  <!-- Back-End Card -->
-  <div class="tool-card">
-    <h3 style="display: flex; align-items: center">
-      Back-End <i style="margin-left: 10px" class="fa-solid fa-laptop-code"></i>
-    </h3>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/node.png" alt="Node JS" /> Node JS</span>
-        <span class="percentage">75%</span>
+      <div class="progress">
+        <div class="progress-header">
+          <span><img src="./logos/docker.png" alt="Docker" /> Docker</span>
+          <span class="percentage">5%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="--progress-width: 5%"></div>
+        </div>
       </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 75%"></div></div>
     </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/express.png" alt="Express JS" /> Express JS</span>
-        <span class="percentage">70%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 70%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/php.png" alt="PHP" /> PHP</span>
-        <span class="percentage">65%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 65%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/laravel.png" alt="Laravel" /> Laravel</span>
-        <span class="percentage">80%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 80%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/mysql.png" alt="MySQL" /> MySQL</span>
-        <span class="percentage">80%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 80%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/oop.png" alt="OOP" /> OOP</span>
-        <span class="percentage">75%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 75%"></div></div>
-    </div>
-  </div>
-
-  <!-- Other Tools -->
-  <div class="tool-card">
-    <h3 style="display: flex; align-items: center">
-      Other Tools <i style="margin-left: 10px" class="fa-solid fa-gear"></i>
-    </h3>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/git hub.png" alt="GitHub" /> GitHub</span>
-        <span class="percentage">85%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 85%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/postmant.png" alt="Postman" /> Postman</span>
-        <span class="percentage">90%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 90%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/Jira_Logo.svg.png" alt="Jira" /> Jira</span>
-        <span class="percentage">80%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 80%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/figma.png" alt="Figma" /> Figma</span>
-        <span class="percentage">85%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 85%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/aws.png" alt="AWS" /> AWS</span>
-        <span class="percentage">65%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 65%"></div></div>
-    </div>
-
-    <div class="progress">
-      <div class="progress-header">
-        <span><img src="./logos/docker.png" alt="Docker" /> Docker</span>
-        <span class="percentage">50%</span>
-      </div>
-      <div class="progress-bar"><div class="progress-fill" style="--progress-width: 50%"></div></div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- start experience -->
-  <div class="contact-meee scroll-reveal" style="margin-bottom: 40px;">
+  <div class="contact-meee scroll-reveal" style="margin-bottom: 40px">
     <p>Explore about me</p>
     <h1 class="experience scroll-reveal">Project Experiences</h1>
   </div>
 
-   <main>
-      <div class="title-vc scroll-reveal">
-        <h1>Virtual Company1</h1>
-        <p style="font-size: 17px;">For this project, we have 5 memebers in our team and I am role as Scrum Master. it is the biggest one of my course that include front-end and back-end also. We built the POS system by using HTML, CSS, BOOTSTRAP, JAVASCRIPT (JQuery, Ajax, Telegram fetch data send...), PHP, MySQL.</p>
-        <div class="git-flex">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-           <a href="#" target="_blank" style="text-decoration: line-through; border: 1px solid #000;padding: 6px 13px;border-radius: 5px;">View Web</a>
-          </a>
-          <a
-            href="https://github.com/Kin-Doung/POS-SYSTEM-G5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <div class="vc-img scroll-reveal">
-        <img src="../img/vc-png.PNG" alt="">
-      </div>
-    </main>
+  <main>
+    <div class="title-vc scroll-reveal">
+      <h1>Virtual Company1</h1>
+      <p style="font-size: 17px">
+        For this project, we have 5 memebers in our team and I am role as
+        Scrum Master. it is the biggest one of my course that include
+        front-end and back-end also. We built the POS system by using HTML,
+        CSS, BOOTSTRAP, JAVASCRIPT (JQuery, Ajax, Telegram fetch data
+        send...), PHP, MySQL.
+      </p>
+      <div class="git-flex">
+        <a href="#" onclick="showNotDeployedAlert(); return false;" style="
+              text-decoration: line-through;
+              border: 1px solid #000;
+              padding: 6px 13px;
+              border-radius: 5px;
+            ">View Web</a>
 
-  <div class="contact-meee scroll-reveal" style="margin-bottom: 40px;">
+        <a href="https://github.com/Kin-Doung/POS-SYSTEM-G5" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="vc-img scroll-reveal">
+      <img src="./img/vc-png.PNG" alt="" />
+    </div>
+  </main>
+
+  <div class="contact-meee scroll-reveal" style="margin-bottom: 40px">
     <p>Explore about me</p>
     <h1 class="experience scroll-reveal">Another project Experiences</h1>
   </div>
 
-
   <div class="container-cards scroll-reveal">
     <div class="card-project scroll-reveal">
-      <img src="../img/vc-png.PNG" alt="Project Image" class="card-img" />
+      <img src="./img/vc-png.PNG" alt="Project Image" class="card-img" />
       <div class="card-overlay">
         <p class="description">Virtual Company 1</p>
-         <span class="virtual">
-          Available only on Git Hub
-       </span>
+        <span class="virtual"> Available only on Git Hub </span>
         <div class="btn-container">
-          <!-- <a href="#" class="btn view-web">View Web</a> -->
-           <a href="#" class="btn view-web" onclick="showNotDeployedAlert(); return false;">View Web</a>
-
+          <a href="#" class="btn view-web" onclick="showNotDeployedAlert(); return false;">View Web</a>
           <a href="https://github.com/Kin-Doung/POS-SYSTEM-G5" target="_blank" class="btn github">
             <i class="fab fa-github"></i>
           </a>
@@ -484,21 +540,35 @@
     </div>
 
     <div class="card-project scroll-reveal">
-      <img src="../img/vc-png.PNG" alt="Project Image" class="card-img" />
+      <img src="./img/python-algorithm.PNG" alt="Project Image" class="card-img" />
       <div class="card-overlay">
         <p class="description">Voice Control Music Player</p>
         <div class="btn-container">
-          <a href="#" class="btn view-web">View Web</a>
-          <a href="https://github.com/Mean74student/Project-Voice-Control-Music-by-Python-M-K-L" target="_blank" class="btn github">
+          <a href="#" class="btn view-web" onclick="showNotDeployedAlert(); return false;">View Web</a>
+
+          <a href="https://github.com/Mean74student/Project-Voice-Control-Music-by-Python-M-K-L" target="_blank"
+            class="btn github">
             <i class="fab fa-github"></i>
           </a>
         </div>
       </div>
     </div>
-    
-    
+
     <div class="card-project scroll-reveal">
-      <img src="../img/psa-kasikor.PNG" alt="Project Image" class="card-img" />
+      <img src="./img/web-design.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">P'sa Kasikor</p>
+        <div class="btn-container">
+          <a href="https://sport-club-webproject.netlify.app/" target="_blank" class="btn view-web">View Web</a>
+          <a href="https://github.com/Seavmey-Yem/A2025-sport-club" target="_blank" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-project scroll-reveal">
+      <img src="./img/psa-kasikor.PNG" alt="Project Image" class="card-img" />
       <div class="card-overlay">
         <p class="description">P'sa Kasikor</p>
         <div class="btn-container">
@@ -510,21 +580,8 @@
       </div>
     </div>
 
-<div class="card-project scroll-reveal">
-      <img src="../img/drink-sale-img.PNG" alt="Project Image" class="card-img" />
-      <div class="card-overlay">
-        <p class="description">Drinks sale</p>
-        <div class="btn-container">
-          <a href="https://drinksale.netlify.app/" target="_blank" class="btn view-web">View Web</a>
-          <a href="https://github.com/chheunseangmeng/drink-sale-web" target="_blank" class="btn github">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <div class="card-project scroll-reveal">
-      <img src="../img/book-store.PNG" alt="Project Image" class="card-img" />
+      <img src="./img/book-store.PNG" alt="Project Image" class="card-img" />
       <div class="card-overlay">
         <p class="description">Book Store</p>
         <div class="btn-container">
@@ -535,39 +592,107 @@
         </div>
       </div>
     </div>
+
+    <div class="card-project scroll-reveal">
+      <img src="./img/drink-sale-img.PNG" alt="Project Image" class="card-img" />
+      <div class="card-overlay">
+        <p class="description">Drinks sale</p>
+        <div class="btn-container">
+          <a href="https://drinksale.netlify.app/" target="_blank" class="btn view-web">View Web</a>
+          <a href="https://github.com/chheunseangmeng/drink-sale-web" target="_blank" class="btn github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="contact-meee scroll-reveal" style="margin-bottom: 40px">
+    <p>Explore about me</p>
+    <h1 class="experience scroll-reveal">Skill in Design</h1>
+  </div>
+
+  <section class="design-skill">
+    <div class="card-design">
+      <marquee id="myMarquee" behavior="scroll" direction="left">
+        <img src="./img/A4 - 4.png" alt="" class="marquee-img" />
+        <img src="./img/A4 - 6.png" alt="" class="marquee-img" />
+        <!-- <img src="./img/blood_donate.png" alt="" class="marquee-img blood" /> -->
+        <img src="./img/Frame 1.png" alt="" class="marquee-img" />
+        <img src="./img/coffee.png" alt="" class="marquee-img" />
+        <img src="./img/ui-ux.PNG" alt="" class="marquee-img" />
+        <img src="./img/the-new-app.png" alt="" class="marquee-img" />
+      </marquee>
+    </div>
+  </section>
+
+
   <!-- Contact Header -->
   <div class="contact-meee scroll-reveal">
     <p>Get in touch with me</p>
     <h1 class="contact scroll-reveal">Contact Me</h1>
   </div>
 
-  <!-- Phone Contact -->
-  <div class="num-con scroll-reveal">
-    <i class="fa-solid fa-phone"></i>
-    <p class="number">+855 68 500 744</p>
-  </div>
-  <!-- email contact  -->
-  <div class="num-con scroll-reveal email" style="margin-top: 0">
-    <i class="fa-solid fa-envelope-circle-check"></i>
-    <p class="number">seangmeng.chheun@student.passerellesnumeriques.org</p>
-  </div>
+  <div class="message-box scroll-reveal">
 
-  <!-- Email & LinkedIn -->
-  <section class="end-contact scroll-reveal">
-    <div class="email-linkin scroll-reveal">
-      <div class="email">
-        <a href="mailto:seangmeng.chheun@student.passerellesnumeriques.org">
-          <i class="fa-solid fa-envelope-circle-check"></i> Email
-        </a>
+    <img src="./Images/img-me/greeting.gif" alt="" class="scroll-reveal">
+    <section class="contact scroll-reveal">
+      <form id="contactForm" class="contact-form">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </section>
+    <img src="./Images/img-me/git-img.gif" alt="" class="scroll-reveal">
+
+
+  </div>
+   
+
+      <!-- Phone Contact -->
+      <div class="num-con scroll-reveal">
+        <i class="fa-solid fa-phone"></i>
+        <p class="number">+855 68 500 744</p>
       </div>
-      <div class="linkin">
-        <a href="https://www.linkedin.com/in/seangmeng-chheun-60923133b" target="_blank">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
+      <!-- email contact  -->
+      <div class="num-con scroll-reveal email" style="margin-top: 0">
+        <i class="fa-solid fa-envelope-circle-check"></i>
+        <p class="number">seangmeng.chheun@student.passerellesnumeriques.org</p>
       </div>
-    </div>
-  </section>
+
+      <!-- Email & LinkedIn -->
+      <section class="end-contact scroll-reveal">
+        <div class="email-linkin scroll-reveal">
+          <div class="email">
+            <a href="mailto:seangmeng.chheun@student.passerellesnumeriques.org">
+              <i class="fa-solid fa-envelope-circle-check"></i> Email
+            </a>
+          </div>
+          <div class="linkin">
+            <a href="https://www.linkedin.com/in/seangmeng-chheun-60923133b" target="_blank">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+   
+ 
+
+
 
   <!-- Footer -->
   <div class="footer scroll-reveal">

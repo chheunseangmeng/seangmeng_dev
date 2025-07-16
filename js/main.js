@@ -77,26 +77,88 @@ ScrollReveal().reveal(".scroll-reveal", {
 document.addEventListener("DOMContentLoaded", () => {
   const progressBars = document.querySelectorAll(".progress-fill");
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animated");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.5,
-  });
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animated");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+    }
+  );
 
   progressBars.forEach((bar) => observer.observe(bar));
 });
 
-
 function showNotDeployedAlert() {
-    Swal.fire({
-      icon: 'info',
-      title: 'Not Deployed',
-      text: 'This project website has not deploy yet.\nGo to Git Hub',
-      confirmButtonText: 'OKAY'
+  Swal.fire({
+    icon: "info",
+    title: "Not Deployed",
+    text: "This project website has not deploy yet. You can Visit in GitHub",
+    confirmButtonText: "OKAY",
+  });
+}
+
+
+  const botToken = '7559810524:AAHEU3Lu-ynrJ7it5WX7oh2hrOwE_dZjzgE';
+  const chatId = '-1002887359185'; 
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("⚠️ Please fill in all fields.");
+      return;
+    }
+
+    const text = `
+📥 <b>New Portfolio Contact</b>\n
+👤 <b>Name:</b> ${name}\n
+📧 <b>Email:</b> ${email}\n
+💬 <b>Message:</b>\n${message}
+    `;
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: text,
+        parse_mode: "HTML" // ✅ Enables bold text formatting
+      })
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.ok) {
+        alert("✅ Message sent to Telegram!");
+        document.getElementById("contactForm").reset();
+      } else {
+        alert("❌ Failed to send message.\n" + data.description);
+        console.error("Telegram error:", data);
+      }
+    })
+    .catch((error) => {
+      alert("⚠️ Error sending message.");
+      console.error("Fetch error:", error);
     });
-  }
+  }); 
+
+//  const marquee = document.getElementById("myMarquee");
+
+//   marquee.addEventListener("mouseover", () => {
+//     marquee.stop();
+//   });
+
+//   marquee.addEventListener("mouseout", () => {
+//     marquee.start();
+//   });
