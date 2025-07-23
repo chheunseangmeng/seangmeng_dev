@@ -1,202 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
-    <title>About me</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link rel="icon" href="../img/about-icon.png">
-    <style>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+  <title>About me</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="icon" href="../img/about-icon.png" />
+  <style>
+    @media (max-width: 480px) {
+      .event {
+        width: 45%;
+      }
 
+      .left {
+        right: -2%;
+      }
 
-      @media (max-width: 480px) {
-    .event { width: 45%; }
-    .left { right: -2%; }
-    .right { left: 53%; }
-    h2 { font-size: 16px; } 
-    p { font-size: 12px; } 
-}
-    </style>
-  </head>
-  <body>
-    <nav>
-      <div class="logo-name">'Seang Meng'</div>
-      <div class="menu-icon">&#9776;</div>
-      <!-- Hamburger Menu -->
-      <div class="nav-link">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html" style="color: rgb(113, 186, 4); border-bottom: 3px solid rgb(132, 215, 8); font-weight: bold;">About me</a></li>
-          <li><a href="./experience.html">Experience</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+      .right {
+        left: 53%;
+      }
 
-    <!-- about me  -->
-    <div class="mid-about scroll-reveal">
-      <p>let engage with me </p>
-      <h1>About me</h1>
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo-name">'Seang Meng'</div>
+    <div class="menu-icon">&#9776;</div>
+    <!-- Hamburger Menu -->
+    <div class="nav-link">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="./about.html" style="
+                color: rgb(113, 186, 4);
+                border-bottom: 3px solid rgb(132, 215, 8);
+                font-weight: bold;
+              ">About me</a>
+        </li>
+        <li><a href="./experience.html">Experience</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-  <!-- Education  -->
-  <section class="education-timeline scroll-reveal">
-    <div class="education-timeline-wrapper scroll-reveal">
-      <!-- Timeline items -->
-      <div class="education-timeline-left scroll-reveal">
-        <div class="education-timeline-item">
-          <span class="education-timeline-date">2018 - 2020</span>
-          <div class="education-timeline-content">
-            <h3>📖 Diploma</h3>
-            <p>I studied at Triel High School</p>
-          </div>
-        </div>
+  <!-- about me  -->
+  <div class="mid-about scroll-reveal">
+    <p>about me</p>
+    <h1>My Visions</h1>
+  </div>
 
-        <div class="education-timeline-item scroll-reveal">
-          <span class="education-timeline-date">2021 - 2023</span>
-          <div class="education-timeline-content">
-            <h3>🎓 BacII</h3>
-            <p>I studied at Triel High School <strong>#B</strong></p>
-          </div>
-        </div>
-
-        <div class="education-timeline-item scroll-reveal">
-          <span class="education-timeline-date">2024 - Present</span>
-          <div class="education-timeline-content">
-            <h3>💻 Associate Degree</h3>
-            <p>Studying at Passerelles numériques Cambodia (PNC)</p>
-          </div>
-        </div>
+  <section class="second-main scroll-reveal">
+    <div class="card-container">
+      <div class="card scroll-reveal">
+        <i class="fa-solid fa-code"></i>
+        <h2>Bring ideas to life</h2>
+        <p>
+          I turn ideas into real websites or apps for businesses, personal
+          brands, or communities. I help bring visions to life online.
+        </p>
+      </div>
+      <div class="card scroll-reveal">
+        <i class="fa-solid fa-brain"></i>
+        <h2>Solve real problems</h2>
+        <p>
+          I create websites and tools that help people. From fixing bugs to
+          building useful features, make digital experiences smoother and more
+          helpful.
+        </p>
       </div>
 
-      <!-- Right-side stacked images -->
-      <div class="education-timeline-right">
-        <div class="first-img">
-          <img src="../Images/img-me/presentation.JPG" alt="Diploma" />
-        </div>
-        <div class="second-img">
-          <img src="../Images/img-me/me-acheivement.JPEG" alt="BacII" />
-        </div>
+      <div class="card scroll-reveal">
+        <i class="fa-solid fa-square-binary"></i>
+        <h2>Keep Growing</h2>
+        <p>
+          Technology changes fast, and I keep up. I'm always learning new
+          things, improving my code, and becoming better at what I do.
+        </p>
       </div>
     </div>
   </section>
 
-    <div class="mid-about scroll-reveal">
-      <p>My languages</p>
-      <h1>Currently I work on</h1>
-    </div>
-    <!-- start experience -->
-    <div class="programming">
-      <img src="../logos/html.webp" alt="">
-      <img src="../logos/css.png" alt="">
-      <img src="../logos/sass.png" alt="">
-      <img src="../logos/bootstrap.png" alt="">
-      <img src="../logos/javascript.webp" alt="">
-      <img src="../logos/node.png" alt="">
-      <img src="../logos/express.png" alt="">
-      <img src="../logos/vue.png" alt="">
-      <img src="../logos/tyscript.png" alt="">
-      <img src="../logos/php.png" alt="">
-      <img src="../logos/laravel.png" alt="">
-      <img src="../logos/mysql.png" alt="">
-      <img src="../logos/oop.png" alt="">
-      <img src="../logos/aws.png" alt="">
-      <img src="../logos/figma.png" alt="">
-      <img src="../logos/git hub.png" alt="">
-      <img src="../logos/Jira_Logo.svg.png" alt="">
-      <img src="../logos/postmant.png" alt="">
-    </div>
+  <!-- time line about my education -->
+  <div class="mid-about scroll-reveal">
+    <p>see my educate</p>
+    <h1 style="text-align: center; margin-bottom: 70px">
+      My Education Timeline
+    </h1>
+  </div>
 
-    <!-- time line about my education -->
-    <h1 style="text-align: center;margin-bottom: 70px;">My Education Timeline</h1>
-    <div class="timeline" id="timeline"></div>
+  <div class="timeline" id="timeline"></div>
 
+  <div class="mid-about scroll-reveal" style="margin-top: 100px;">
+    <p>something more about me</p>
+    <h1>Building soft skill is very important</h1>
+  </div>
 
-    <!-- Contact Header -->
-    <div class="contact-meee scroll-reveal">
-      <p>Get in touch with me</p>
-      <h1 class="contact scroll-reveal">Contact Me</h1>
-    </div>
-
-    <!-- Phone Contact -->
-    <div class="num-con scroll-reveal">
-      <i class="fa-solid fa-phone"></i>
-      <p class="number">+855 68 500 744</p>
-    </div>
-     <!-- email contact  -->
-     <div class="num-con scroll-reveal" style="margin-top: 0;">
-      <i class="fa-solid fa-envelope-circle-check"></i> 
-      <p class="number">seangmeng.chheun@student.passerellesnumeriques.org</p>
-    </div>
-
-    <!-- Email & LinkedIn -->
-    <section class="end-contact scroll-reveal">
-      <div class="email-linkin scroll-reveal">
-        <div class="email">
-          <a href="mailto:seangmeng.chheun@student.passerellesnumeriques.org">
-            <i class="fa-solid fa-envelope-circle-check"></i> Email Me
-          </a>
-        </div>
-        <div class="linkin">
-          <a
-            href="https://www.linkedin.com/in/seangmeng-chheun-60923133b"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-        </div>
+  <section class="soft-skills scroll-reveal">
+    <div class="soft-skill">
+      <div class="image-layer scroll-reveal">
+        <img src="../Images/img-me/me-camera.JPG" alt="" />
       </div>
-    </section>
+      <div class="image-layer scroll-reveal">
+        <img src="../Images/img-me/me-workshop.JPG" alt="" />
+      </div>
+      <div class="image-layer scroll-reveal">
+        <img src="../Images/img-me/me-volunteer.JPG" alt="" />
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <div class="footer scroll-reveal">
+    <div class="soft-skill-card">
+      <h3>My Events & Volunteer Work</h3>
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/about.html" class="active-link">About</a></li>
-        <li><a href="../pages/experience.html">Experience</a></li>
-        <li><a href="../pages/contact.html">Contact</a></li>
-
+        <li>
+          Joined Transparency International of <strong>Cambodia</strong> (03
+          Feb - 07 Feb 2023)
+        </li>
+        <li>
+          <strong>Exchanged program</strong> between Cambodia & Singapore (09
+          Feb 2023)
+        </li>
+        <li>
+          Joined Annual Youth Leader Event <strong>(AYLE)</strong> (12 Dec -
+          16 Dec 2023)
+        </li>
+        <li>
+          Volunteered as <strong>Cameraman</strong> of school event (iOSS)
+        </li>
       </ul>
     </div>
-    <!-- script of my education -->
-     <script>
-      
-const experiences = [
-  { year: '2023', title: 'High School Graduation', details: 'Graduated from high school in 2023...', side: 'left' },
-  { year: '2023', title: 'Transparency International Cambodia', details: 'Joined the event of Transparency International Cambodia from 02 Feb 2023 - 07 Feb 2023...', side: 'right' },
-  { year: '2023', title: 'Exchange Program', details: 'Exchange program between youth in Cambodia and Singapore on 09 Feb 2023...', side: 'left' },
-  { year: '2023', title: 'AYLE', details: 'Joined the Annual Youth Leadership Event (AYLE) in December 2023...', side: 'right' },
-  { year: '2024', title: 'Start PNC', details: 'Started university at PNC on 05 Feb 2024...', side: 'left' }
-];
+  </section>
 
-const ribbonColors = ['#fe6241', '#4cf208', '#2196f3', '#d23df3', '#ff9800'];
+  <div class="mid-about scroll-reveal" style="margin-top: 50px">
+    <p>My languages</p>
+    <h1>Currently I work on</h1>
+  </div>
+  <!-- start experience -->
+  <div class="programming">
+    <img src="../logos/html.webp" alt="" />
+    <img src="../logos/css.png" alt="" />
+    <img src="../logos/sass.png" alt="" />
+    <img src="../logos/bootstrap.png" alt="" />
+    <img src="../logos/javascript.webp" alt="" />
+    <img src="../logos/node.png" alt="" />
+    <img src="../logos/express.png" alt="" />
+    <img src="../logos/vue.png" alt="" />
+    <img src="../logos/tyscript.png" alt="" />
+    <img src="../logos/php.png" alt="" />
+    <img src="../logos/laravel.png" alt="" />
+    <img src="../logos/mysql.png" alt="" />
+    <img src="../logos/oop.png" alt="" />
+    <img src="../logos/aws.png" alt="" />
+    <img src="../logos/figma.png" alt="" />
+    <img src="../logos/git hub.png" alt="" />
+    <img src="../logos/Jira_Logo.svg.png" alt="" />
+    <img src="../logos/postmant.png" alt="" />
+  </div>
 
-const timeline = document.getElementById('timeline');
+  <!-- Contact Header -->
+  <div class="contact-meee scroll-reveal">
+    <p>Get in touch with me</p>
+    <h1 class="contact scroll-reveal">Contact Me</h1>
+  </div>
 
-experiences.forEach((exp, index) => {
-  const eventDiv = document.createElement('div');
-  eventDiv.classList.add('event', exp.side, 'scroll-reveal'); // Added 'scroll-reveal' class
-  const ribbonColor = ribbonColors[index % ribbonColors.length];
+  <!-- Phone Contact -->
+  <div class="num-con scroll-reveal">
+    <i class="fa-solid fa-phone"></i>
+    <p class="number">+855 68 500 744</p>
+  </div>
+  <!-- email contact  -->
+  <div class="num-con scroll-reveal" style="margin-top: 0">
+    <i class="fa-solid fa-envelope-circle-check"></i>
+    <p class="number">seangmeng.chheun@student.passerellesnumeriques.org</p>
+  </div>
 
-  eventDiv.innerHTML = `
+  <!-- Email & LinkedIn -->
+  <section class="end-contact scroll-reveal">
+    <div class="email-linkin scroll-reveal">
+      <div class="email">
+        <a href="mailto:seangmeng.chheun@student.passerellesnumeriques.org">
+          <i class="fa-solid fa-envelope-circle-check"></i> Email Me
+        </a>
+      </div>
+      <div class="linkin">
+        <a href="https://www.linkedin.com/in/seangmeng-chheun-60923133b" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer scroll-reveal">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/about.html" class="active-link">About</a></li>
+      <li><a href="../pages/experience.html">Experience</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- script of my education -->
+  <script>
+    const experiences = [
+      {
+        year: "2023",
+        title: "High School Graduation",
+        details: "Graduated from high school in 2023...",
+        side: "left",
+      },
+      {
+        year: "2023",
+        title: "Transparency International Cambodia",
+        details:
+          "Joined the event of Transparency International Cambodia from 02 Feb 2023 - 07 Feb 2023...",
+        side: "right",
+      },
+      {
+        year: "2023",
+        title: "Exchange Program",
+        details:
+          "Exchange program between youth in Cambodia and Singapore on 09 Feb 2023...",
+        side: "left",
+      },
+      {
+        year: "2023",
+        title: "AYLE",
+        details:
+          "Joined the Annual Youth Leadership Event (AYLE) in December 2023...",
+        side: "right",
+      },
+      {
+        year: "2024",
+        title: "Start PNC",
+        details: "Started university at Passerelles Numeriques Cambodia - PNC on 05 Feb 2024...",
+        side: "left",
+      },
+    ];
+
+    const ribbonColors = [
+      "#fe6241",
+      "#4cf208",
+      "#2196f3",
+      "#d23df3",
+      "#ff9800",
+    ];
+
+    const timeline = document.getElementById("timeline");
+
+    experiences.forEach((exp, index) => {
+      const eventDiv = document.createElement("div");
+      eventDiv.classList.add("event", exp.side, "scroll-reveal"); // Added 'scroll-reveal' class
+      const ribbonColor = ribbonColors[index % ribbonColors.length];
+
+      eventDiv.innerHTML = `
       <div class='ribbon' style="background-color: ${ribbonColor};">${exp.year}</div>
       <h2>${exp.title}</h2>
       <p>${exp.details}</p>
   `;
-  timeline.appendChild(eventDiv);
-});
-     </script>
-     <!-- end of scrpit education -->
+      timeline.appendChild(eventDiv);
+    });
+  </script>
+  <!-- end of scrpit education -->
 
-    <!-- Add Scripts Here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../js/main.js"></script>
-  </body>
+  <!-- Add Scripts Here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>
